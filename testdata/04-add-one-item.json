@@ -1,0 +1,21 @@
+{
+  "name": "Add one item updates cart badge",
+  "tags": [
+    "smoke"
+  ],
+  "steps": [
+    {
+      "keyword": "login"
+    },
+    {
+      "keyword": "addToCart",
+      "item": "addBackpack"
+    },
+    {
+      "keyword": "assertText",
+      "target": "inventory.cartBadge",
+      "value": "1",
+      "exact": true
+    }
+  ]
+}

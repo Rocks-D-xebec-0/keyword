@@ -1,0 +1,10 @@
+{
+  "name": "Login with standard user",
+  "tags": ["smoke"],
+  "steps": [
+    { "keyword": "login", "user": "standard_user" },
+    { "keyword": "assertUrl", "value": "inventory.html" },
+    { "keyword": "assertText", "target": "inventory.title", "value": "Products" },
+    { "keyword": "assertCount", "target": "inventory.items", "value": 6 }
+  ]
+}

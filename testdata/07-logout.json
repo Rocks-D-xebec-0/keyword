@@ -1,0 +1,22 @@
+{
+  "name": "Logout returns to login page",
+  "tags": [
+    "smoke"
+  ],
+  "steps": [
+    {
+      "keyword": "login"
+    },
+    {
+      "keyword": "logout"
+    },
+    {
+      "keyword": "assertVisible",
+      "target": "login.loginButton"
+    },
+    {
+      "keyword": "assertUrl",
+      "value": "saucedemo.com/$"
+    }
+  ]
+}

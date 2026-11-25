@@ -1,0 +1,37 @@
+{
+  "name": "Add multiple items shows cart count",
+  "tags": [
+    "cart"
+  ],
+  "steps": [
+    {
+      "keyword": "login"
+    },
+    {
+      "keyword": "addToCart",
+      "item": "addBackpack"
+    },
+    {
+      "keyword": "addToCart",
+      "item": "addBikeLight"
+    },
+    {
+      "keyword": "addToCart",
+      "item": "addBoltTShirt"
+    },
+    {
+      "keyword": "assertText",
+      "target": "inventory.cartBadge",
+      "value": "3",
+      "exact": true
+    },
+    {
+      "keyword": "openCart"
+    },
+    {
+      "keyword": "assertCount",
+      "target": "cart.items",
+      "value": 3
+    }
+  ]
+}

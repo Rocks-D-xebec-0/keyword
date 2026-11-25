@@ -1,0 +1,5 @@
+{
+  "title": "[data-test='title']",
+  "items": "[data-test='inventory-item']",
+  "checkoutButton": "[data-test='checkout']"
+}

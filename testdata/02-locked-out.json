@@ -1,0 +1,21 @@
+{
+  "name": "Locked out user sees error",
+  "tags": [
+    "negative"
+  ],
+  "steps": [
+    {
+      "keyword": "login",
+      "user": "locked_out_user"
+    },
+    {
+      "keyword": "assertText",
+      "target": "login.error",
+      "value": "locked out"
+    },
+    {
+      "keyword": "assertUrl",
+      "value": "saucedemo.com/$"
+    }
+  ]
+}

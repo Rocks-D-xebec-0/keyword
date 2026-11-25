@@ -1,0 +1,14 @@
+{
+  "title": "[data-test='title']",
+  "items": "[data-test='inventory-item']",
+  "sort": "[data-test='product-sort-container']",
+  "cartLink": "[data-test='shopping-cart-link']",
+  "cartBadge": "[data-test='shopping-cart-badge']",
+  "addBackpack": "[data-test='add-to-cart-sauce-labs-backpack']",
+  "addBikeLight": "[data-test='add-to-cart-sauce-labs-bike-light']",
+  "firstItemName": "[data-test='inventory-item-name'] >> nth=0",
+  "firstItemPrice": "[data-test='inventory-item-price'] >> nth=0",
+  "addBoltTShirt": "[data-test='add-to-cart-sauce-labs-bolt-t-shirt']",
+  "menuButton": "#react-burger-menu-btn",
+  "logoutLink": "[data-test='logout-sidebar-link']"
+}
